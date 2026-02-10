@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 70px;
+    top: 0;
+    width: 100vw;
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+    border: 2px solid rgba(11, 21, 28, 0.4);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px 1px rgba(1, 102, 153, 0.425);
+    transition: all .5s ease-in-out .05s;
+
+}
+
+header:hover {
+    border-radius: 60px;
+    width: 95vw;
+    top: 10px;
+    transition: all .5s ease-in-out .05s;
+
+}
+
+.a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 19px;
+    box-shadow: inset 1px 1px 3px 1px rgb(255, 255, 255);
+    transition: all .3s ease-in-out .008s;
+}
+
+.a:hover {
+    background-color: rgb(35, 72, 121);
+    transition: all .3s ease-in-out .008s;
+    transform: scale(1.2);
+}
+
+.links_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.links {
+    text-decoration: none;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    color: rgb(192, 248, 229);
+    font-size: xx-large;
+    background-color: rgba(66, 66, 132, 0.541);
+    transition: all .5s ease-in-out .008s;
+
+
+}
+
+.links:hover {
+    transition: all .5s ease-in-out .008s;
+    transform: scale(1.1);
+    background-color: rgb(40, 5, 73);
+}
+
+.h {
+    background-color: rgb(33, 67, 112);
+    transition: all .4s ease-in-out .008s;
+    transform: scale(1.2);
+
+}
+
+h2 {
+    background-color: rgb(2, 25, 101);
+    position: relative;
+    z-index: 4;
+    bottom: 60px;
+    font-size: xx-large;
+    padding: 3px;
+    border-radius: 50px 3px;
+    padding-right: 40px;
+    box-shadow: inset 0 0 8px 3px white;
+    padding-left: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/23639.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+img {
+    border-radius: 20px;
+    margin: 20px;
+}
+
+img:hover {
+    height: 2;
+    box-shadow: 1px 1px 20px 5px black;
+
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    margin: 40px;
+    color: rgb(225, 225, 225);
+    padding: 40px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    box-shadow: inset 0 0 10px 1px white;
+    border: 2px solid rgba(9, 125, 219, 0.934);
+    transition: all .4s ease-in-out .0s;
+}
+
+.card:hover {
+    box-shadow: inset 0 0 30px 4px rgb(2, 225, 255);
+    transition: all .4s ease-in-out .0s;
+    transform: scale(1.03);
+}
+
+
+p {
+    font-size: 19px;
+    
+    text-shadow: 5px 5px  5px rgb(47, 47, 47);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    left: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(99px);
+    box-shadow: 0px 0px 60px 60px rgb(0, 14, 33);
+    z-index: 8;
+    text-shadow: 1px 1px 3px rgb(86, 86, 86);
+
+}
+
+/* #z {
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    
+    display: flex;
+    direction: row;
+    padding-left:60px ;
+
+
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5 {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 120px 60px black;
+    
+} */
+/* 
+.b1 {
+    animation: cloud 2s ease-in-out infinite forwards;
+}
+
+.b2 {
+    animation: cloud 2s ease-in-out 1s infinite;
+}
+
+.b3 {
+    animation: cloud 3s ease-in-out 2s infinite;
+}
+
+.b4 {
+    animation: cloud 4s ease-in-out 3s infinite;
+}
+
+.b5 {
+    animation: cloud 4.6s ease-in-out 4s infinite;
+}
+
+@keyframes cloud {
+    0% {
+        box-shadow: 0 0 90px 60px rgb(255, 255, 255);
+    }
+
+    50% {
+        box-shadow: 0 0 200px 40px rgba(181, 180, 180, 0.812);
+    }
+
+    100% {
+        box-shadow: 0 0 90px 60px rgb(215, 215, 215);
+    }
+} */
+
+/* @keyframes cloud2{
+    0%{
+       box-shadow:0 0 150px 90px rgb(0, 0, 0);
+    }
+    100%{
+        box-shadow:  0 0 150px 90px rgb(0, 0, 0);
+    }
+} */
