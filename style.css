@@ -2,52 +2,167 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition:all .4s ease-in-out;
 }
+#logo{
+    
+    position: fixed;
+    top: 9px;
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(254, 254, 194));
+    background-clip: text;
+    color:transparent;
+    left: 40px;
+    font-size: 40px;
+    z-index: 60;
+    animation:show 2s ease-in-out 1 ;
+}
+#Name{
+    text-shadow: 0 0 100px rgb(191, 5, 224);
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-family: 'popins',sans-serif;
+    position: relative;
+     top: -20px;
+     animation:show 1s ease-in-out 1 , up 1s ease-in-out 1;
+}
+@keyframes show{ 
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: .3;
+    }
+    100%{
+        
+    }
+}
+@keyframes up{
+    0%{
+        transform: scale(.7) translate(500px);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes updown {
+    0%{
+        transform: translate(0,-5px);
+       
+    }
+    50%{
+        transform: translate(0,5px);
+         box-shadow: 0px  0px  50px 50px rgba(54, 2, 137, 0.619);
+    }
+    100%{
+        transform: translate(0,-5px);
+    }
+
+    
+    
+}
+@keyframes btn {
+    0%{
+
+    }
+    80%{
+        color: #ddd;
+    }
+    90%{
+       
+       color: rgb(0, 0, 0);
+    }
+    100%{
+       color: #ddd;
+    }
+}
+.con{
+   animation:btn 5s ease-in-out infinite  ;
+    }
 
 header {
-    height: 70px;
-    top: 0;
-    width: 100vw;
-    backdrop-filter: blur(6px);
-
+    height: 60px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    padding-right: 30px;
+    border-bottom: 1px solid white;
+    background-color: rgba(127, 255, 212, 0);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: end;
+    gap: 60px;
     position: fixed;
     z-index: 3;
-    border: 2px solid rgba(11, 21, 28, 0.4);
-    border-radius: 0px;
+    /* border: 2px solid rgba(11, 21, 28, 0.4);
+    
     overflow: hidden;
-    box-shadow: inset 0 0 10px 1px rgba(1, 102, 153, 0.425);
+   
     transition: all .5s ease-in-out .05s;
+    border-radius: 60px; */
+    /* width: 95vw; */
+     box-shadow:  0 0 10px 10px rgba(0, 0, 0, 0.877);
+    top: 0px;
+    right: 0;
+    animation:show 1s ease-in-out 1 ;
+    
 
 }
 
-header:hover {
-    border-radius: 60px;
-    width: 95vw;
-    top: 10px;
-    transition: all .5s ease-in-out .05s;
 
-}
 
 .a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 19px;
-    box-shadow: inset 1px 1px 3px 1px rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    font-family: 'popins',sans-serif;
+    /* box-shadow: inset 1px 1px 3px 1px rgb(255, 255, 255); */
     transition: all .3s ease-in-out .008s;
+    border: 1.8px solid white;
 }
 
 .a:hover {
-    background-color: rgb(35, 72, 121);
+    color: rgb(112, 0, 99);
     transition: all .3s ease-in-out .008s;
-    transform: scale(1.2);
+    border: 1.8px solid rgb(137, 1, 119);
+    
+}
+.h {
+    color: rgb(119, 102, 248);
+    border: 1.8px solid rgb(119, 102, 248);
+    transition: all .4s ease-in-out .008s;
+    
+    
+
+}
+#hero{
+    height: 500px;
+         width: 69%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 20px 1px rgba(168, 6, 209, 0);
+    animation:show 1s ease-in-out 1 ;
+   
+}
+#myi{
+    height: 400px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 400px;
+    border: 5px solid rgba(214, 65, 237, 0.619);
+    box-shadow: 0px  0px  50px 10px rgba(74, 8, 181, 0.579);
+    animation: updown 5s ease-in-out infinite;
+   
+    
 }
 
 .links_box {
@@ -65,9 +180,10 @@ header:hover {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border-radius: 2px;
-    color: rgb(192, 248, 229);
+    border-radius: 40px;
+    color: rgb(204, 209, 220);
     font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(66, 66, 132, 0.541);
     transition: all .5s ease-in-out .008s;
 
@@ -80,29 +196,25 @@ header:hover {
     background-color: rgb(40, 5, 73);
 }
 
-.h {
-    background-color: rgb(33, 67, 112);
-    transition: all .4s ease-in-out .008s;
-    transform: scale(1.2);
 
-}
 
 h2 {
-    background-color: rgb(2, 25, 101);
+    background-color: rgb(22, 1, 25);
     position: relative;
+    left: -400px;
     z-index: 4;
     bottom: 60px;
     font-size: xx-large;
     padding: 3px;
-    border-radius: 50px 3px;
+    border-radius: 30px;
     padding-right: 40px;
-    box-shadow: inset 0 0 8px 3px white;
+    border: 2px solid rgb(161, 161, 161);
     padding-left: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'popins',sans-serif;
 }
 
 body {
-    background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/23639.jpg");
+    background-image: url("abstract-dark-background-with-flowing-colouful-waves.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,22 +224,23 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
-    padding-bottom: 150px;
+    
 }
 
-img {
+#i1 {
     border-radius: 20px;
     margin: 20px;
+
 }
 
-img:hover {
-    height: 2;
+#i1:hover {
+
     box-shadow: 1px 1px 20px 5px black;
 
 }
 
 .card {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(9px);
     margin: 40px;
     color: rgb(225, 225, 225);
     padding: 40px;
@@ -137,15 +250,19 @@ img:hover {
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
-    box-shadow: inset 0 0 10px 1px white;
-    border: 2px solid rgba(9, 125, 219, 0.934);
+    gap: 20px;
+    border: 2px solid rgba(240, 240, 240, 0.807);
     transition: all .4s ease-in-out .0s;
+    
 }
 
 .card:hover {
-    box-shadow: inset 0 0 30px 4px rgb(2, 225, 255);
+    
     transition: all .4s ease-in-out .0s;
     transform: scale(1.03);
+}
+a{
+    text-decoration: none;
 }
 
 
@@ -157,87 +274,120 @@ p {
 
 
 footer {
-    position: fixed;
+    position:static;
     bottom: 0;
-    border: 2px solid rgb(0, 0, 0);
-    width: 100%;
-    left: 0;
-    height: 60px;
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 99.56%;
+    height:200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(99px);
-    box-shadow: 0px 0px 60px 60px rgb(0, 14, 33);
+    backdrop-filter: blur(60px);
+    overflow: hidden;
     z-index: 8;
-    text-shadow: 1px 1px 3px rgb(86, 86, 86);
+    text-shadow: 1px 1px 6px rgb(121, 22, 22);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
-/* #z {
-    background-color: rgba(255, 255, 255, 0.63);
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 5;
-    bottom: 0;
-    
+
+/* Contact page                                                        */
+
+form{
+    /* background-color: rgba(239, 234, 254, 0.64);
+    box-shadow: inset 0 0 55px 10px rgba(0, 0, 0, 0.348); */
     display: flex;
-    direction: row;
-    padding-left:60px ;
-
-
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-size: xx-large;
+    padding: 50px;
+    gap: 30px;
+    color: rgb(58, 57, 57);
+    border-radius:30px ;
+    width: 600px;
+    position: relative;
+    top: -50px;
 }
 
-.b1,
-.b2,
-.b3,
-.b4,
-.b5 {
-    height: 100%;
-    width: 100%;
-    box-shadow: 0px 0px 120px 60px black;
+#name,#text,#phone,#email{
+    color: rgb(128, 128, 128);
+    width: 50%;
+    background-color: rgba(188, 15, 246, 0);
+    padding: 3px 10px 3px 10px ;
+    border: none;
+    border-bottom: 2px solid white;
     
-} */
-/* 
-.b1 {
-    animation: cloud 2s ease-in-out infinite forwards;
+    transition: all .6s ease-in-out;
+    
+}
+#name:hover,#text:hover,#phone:hover,#email:hover{
+    color: rgb(255, 255, 255);
+    
+    padding: 3px 10px 3px 10px ;
+    border: none;
+    box-shadow:  0 0 55px 10px rgba(1, 239, 239, 0.305);
+    transition: all .6s ease-in-out;
+    
+}
+#submit-btn{
+    background-color: rgba(250, 250, 250, 0.793);
+    box-shadow: 1px 3px 5px 1px rgba(63, 63, 63, 0.867) ;
+    border-radius: 40px;
+    width: 90px;
+    border: none;
+    text-align: center;
+    margin: 25px;
+    padding: 5px 10px 5px 10px;
+    transition: all .4s ease-in;
+}
+#submit-btn:hover{
+    background-color: rgb(3, 112, 244);
+    transition: all .4s ease-in;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px 6px white;
+}
+#submit-btn:active{
+    background-color: rgb(25, 125, 0);
+    transition: all 0s ease-in;
+    
+    
 }
 
-.b2 {
-    animation: cloud 2s ease-in-out 1s infinite;
+
+
+
+/* SKIlls */
+.skills-table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.b3 {
-    animation: cloud 3s ease-in-out 2s infinite;
+.skills-table th {
+  background-color: #175495;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
 }
 
-.b4 {
-    animation: cloud 4s ease-in-out 3s infinite;
+.skills-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
 }
 
-.b5 {
-    animation: cloud 4.6s ease-in-out 4s infinite;
+.skills-table tr:hover {
+  background-color: #f2f2f277;
+  transition: 0.3s;
 }
 
-@keyframes cloud {
-    0% {
-        box-shadow: 0 0 90px 60px rgb(255, 255, 255);
-    }
-
-    50% {
-        box-shadow: 0 0 200px 40px rgba(181, 180, 180, 0.812);
-    }
-
-    100% {
-        box-shadow: 0 0 90px 60px rgb(215, 215, 215);
-    }
-} */
-
-/* @keyframes cloud2{
-    0%{
-       box-shadow:0 0 150px 90px rgb(0, 0, 0);
-    }
-    100%{
-        box-shadow:  0 0 150px 90px rgb(0, 0, 0);
-    }
-} */
+.skills-table tbody tr:last-child td {
+  border-bottom: none;
+}

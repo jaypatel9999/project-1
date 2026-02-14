@@ -11,92 +11,46 @@
 
 <body>
     <header>
-        <a class="a h" href="/index.html">Home</a>
+        <a class="a h" href="/Contact.html">Contact</a>
+        <a class="a " href="/index.html">Home</a>
         <a class="a" href="/Skills.html">Skills</a>
-        <a class="a" href="/Contact.html">Contact</a>
         <a class="a" href="/About.html">About</a>
     </header>
-    <div>
+
+
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <form action="/index.php" method="post">
+
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+
             
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4N5EC5fHc0ds9KEXibMueJEapUqv-HIyQ7w&s"
-        alt="profile Photo"> 
-        <h1>
-            PATEL JAYKUMAR D.
-        </h1><br>
-        <p>
-            I am pursuing my B.Tech in Information Technology from Silver Oak University, with a CGPA of 8.65.
 
-            I am highly passionate about frontend development, and I have hands-on skills in React JS, along with HTML,
-            CSS,
-            and JavaScript.
+            <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{10}" maxlength="10" required>
+            <input type="email" name="email" id="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="30" placeholder="Email" required>
+            <input type="text-area"  name="text" id="text" placeholder="Resone for Contact" required>
 
-            During my academic journey, I also worked on a project using Machine Learning and Python, which helped me
-            strengthen my technical knowledge and problem-solving skills.
-        </p>
+            <button type="submit" id="submit-btn">Send</button>
+
+
+        </form>
+        <p>Email : jaypatel78@gmail.com</p>
+        <p>Phone :+91 8789578674</p>
     </div>
 
 
 
 
-    <!-- 2 -->
-    <div>
-        <h2>
-            About Me
-        </h2><br>
-        <p>
-            I am interested in coding challenges, puzzle solving, and listening to music, which keep me motivated.
 
-            My strengths are that I am a quick learner, have strong work ethics, and I am highly dedicated to my work.
-
-            Regarding my weakness, time management is something I am improving by planning my tasks better and following
-            a
-            proper schedule.
-        </p>
-    </div>
-
-
-    <div>
-        <h2>
-            Education
-        </h2><br>
-        <p>
-            Jul 2022 - Oct 2025 Bachelor of Technology in Information Technology<br>
-            Aditya Silver Oak University, Ahmedabad<br>
-            Duration: 7 Semesters<br>
-            CGPA: 9.04<br>
-            Higher Secondary Education (11,12 Science-67.67%)<br>
-        </p>
-    </div>
-
-    <div>
-        <h2>Skills</h2><br>
-    <p>HTML,css,js,reactJS,PHP,Python,SQL
-
-    </p>
-    </div>
-    
-    <div>
-        <h2>Contact Me</h2><br>
-    <p>Email : jaypatel78@gmail.com</p>
-    <p>Phone :+91 8789578674</p>
-    </div>
-    
-
-    <div>
-        <h2>Useful Links</h2><br>
-    <a href="https://github.com/jaypatel9999">Github</a>
-    <br>
-    <a href="https://silveroakuni.ac.in/">College Website </a>
-    <br>
-    <a href="https://developer.mozilla.org/en-US/">MDN </a>
-    <br>
-    </div>
-    
-    
-    <footer >
+    <footer>
 
         <p>© 2026 College Student Portfolio</p>
+
     </footer>
+
+
+
 
 
 </body>
