@@ -654,7 +654,7 @@ form {
 .ia {
     color: #ffffff;
     font-size: 30px;
-    animation: swing 3s ease-in-out 1s infinite alternate;
+   
     backdrop-filter: blur(9px);
     box-shadow: 0 0 5px 5px rgb(155, 21, 188);
     padding: 9px;
@@ -664,7 +664,18 @@ form {
     aspect-ratio: 1;
     border-radius: 400px;
 }
-
+.iaa{
+     animation: swing 3s ease-in-out 1s infinite alternate;
+}
+.iab{
+     animation: swing 3s ease-in-out 1.23s infinite alternate;
+}
+.iac{
+     animation: swing 3s ease-in-out 1.5s infinite alternate;
+}
+.iad{
+   animation: swing 3s ease-in-out 2s infinite alternate;
+}
 @keyframes swing {
     40% {
         transform: rotate(0deg);
